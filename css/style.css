@@ -1,0 +1,343 @@
+body {
+  margin: 0;
+  background-color: hsl(247, 100%, 90%);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: hsl(247, 79%, 85%);
+  text-transform: capitalize;
+  background-image: url(/tech-enter-co/img/K30-PURPLE.png.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 60px;
+  font-weight: 200;
+  -webkit-text-stroke-color: #4d5894;
+  -webkit-text-stroke-width: 1px;
+  text-shadow: 2px 2px #1d2847;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.Navbar ul {
+  list-style-type: none;
+  background-color: #4d5894;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+.Navbar a {
+  color: #bfb8f5;
+  text-decoration: none;
+  padding: 25px 20px;
+  display: inline-block;
+  width: 100px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.Navbar a:hover {
+  background-color: #8990eb;
+}
+
+.Navbar li {
+  display: inline-block;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+ul.Parent {
+  list-style-type: none;
+  background-color: #4d5894;
+  padding: 0;
+  overflow: hidden;
+  position: static;
+  margin: 0;
+  text-align: center;
+}
+
+ul.Parent a {
+  color: #d3cdff;
+  text-decoration: none;
+  padding: 25px 20px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+ul.Parent a:hover {
+  background-color: #8990eb;
+}
+
+ul.Parent li {
+  float: left;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: #d3cdff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li ul.dropdown {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%;
+  background-color: #4d5894;
+  position: static;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover {
+  background: #4d5894;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+
+ul li:hover ul.dropdown-container {
+  position: relative;
+}
+
+ul li:hover ul.dropdown {
+  position: absolute;
+  display: block;
+  width: min-content;
+}
+
+h3 {
+  background-color: #8990eb;
+  text-align: center;
+  color: #1d2847;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+}
+
+.productos-destacados {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.productos-destacados h2 {
+  color: #4d5894;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  background-color: #8673b2;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.producto h4 {
+  color: #14f9a6;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.producto p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.producto .btn {
+  background-color: #14f9a6;
+  color: #146d31;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.producto .btn:hover {
+  background-color: #14ea9b;
+}
+
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  background-color: #8673b2;
+  margin: 20px auto;
+}
+
+form h2 {
+  color: #14f9a6;
+  font-size: 25px;
+}
+
+.form-txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-txt a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.form-txt a:hover {
+  color: #14f9a6;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  background-color: #818ec6;
+  padding: 20px 14px;
+  margin-bottom: 25px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #bfc9f3;
+  font-size: 15px;
+}
+
+:focus {
+  outline: 1px solid #14f9a6;
+}
+
+.btn {
+  background-color: #14f9a6;
+  color: #146d31;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #14ea9b;
+}
+
+@media (max-width: 991px) {
+  body {
+      padding: 30px;
+  }
+
+  form {
+      width: 100%;
+  }
+
+  .productos-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .producto {
+      width: 100%;
+  }
+}
+
+footer {
+  flex-shrink: 0;
+  border-top: 1px dashed #000;
+  width: 100%;
+  background: #694eb100;
+  color: #574b64;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contenido-footer {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 20px;
+  padding: 50px 0 100px;
+}
+
+.bloc {
+  width: 30%;
+}
+
+.footer-services h3,
+.footer-informacion h3,
+.footer-contacto h3 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.footer-contacto p {
+  padding: 5px 0;
+}
+
+.liste-services,
+.liste-information {
+  list-style-type: none;
+  padding: 0;
+}
+
+.liste-services li {
+  padding: 3px 0;
+}
+
+.liste-services a {
+  text-decoration: none;
+  color: #4c1272;
+}
+
+.liste-services a:hover {
+  color: rgb(116, 7, 7);
+}
